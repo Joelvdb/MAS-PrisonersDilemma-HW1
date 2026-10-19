@@ -7,6 +7,10 @@ total score wins.
 
 The full assignment is in **`Prisoners_Dilemma_Assignment.pdf`**.
 
+**Get the code:** on this page click **Code → Download ZIP** and unzip it (or
+`git clone` this repository). Open a terminal in that folder for the commands
+below.
+
 ## 1. Write your agent
 
 Open `my_agent.py` and fill in two methods:
@@ -28,7 +32,8 @@ class MyAgent:
 python3 practice.py
 ```
 
-You need Python 3.9 or newer, and nothing else. This plays your agent against
+You need Python 3.9 or newer, and nothing else. On Windows, type `python`
+(or `py`) instead of `python3`. This plays your agent against
 the reference strategies in `baselines/` using the real tournament engine. It
 also tells you if your agent crashes or is too slow.
 
@@ -47,6 +52,15 @@ Write `report.pdf`, in English or Hebrew:
 ├── my_agent.py
 └── report.pdf
 ```
+
+Make the zip from inside the folder:
+
+```bash
+zip 123456789.zip my_agent.py report.pdf
+```
+
+(or select the two files and choose *Compress* on macOS, or *Send to →
+Compressed (zipped) folder* on Windows, then rename the zip to your ID).
 
 Check the zip before you upload it:
 

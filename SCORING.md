@@ -240,6 +240,15 @@ python3 run_tournament.py --dirs submissions --reps 2000 --seed 20260810
 python3 inspect_match.py <agent A> <agent B> --rep 0     # round-by-round replay
 ```
 
-`results/replications.csv` holds the raw `R × n` sample if you want to redo the
-statistics yourself; `results/tournament_charts.html` plots the running mean
+(`run_tournament.py` and `inspect_match.py` are the instructor's tools and are
+not in the student pack.) With the pack you can reproduce the same kind of
+numbers yourself, with the same engine:
+
+```bash
+python3 practice.py --seed 1 --reps 1000          # same seed -> same numbers, every time
+python3 practice.py --vs generous_tft --trace     # round-by-round replay of one match
+```
+
+The graded run also writes `results/replications.csv` (the raw `R × n`
+sample) and `results/tournament_charts.html`, which plots the running mean
 against the number of replications, so you can see the ranking settle.
